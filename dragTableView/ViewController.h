@@ -1,15 +1,12 @@
-//
-//  ViewController.h
-//  dragTableView
-//
-//  Created by Yoav Paskaro on 4/15/15.
-//  Copyright (c) 2015 Yoav Paskaro. All rights reserved.
-//
+
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
+@property (strong, nonatomic) UITableView *tableView;
+@property (strong, nonatomic) UIView *viewHeader;
 
 @end
+
 
